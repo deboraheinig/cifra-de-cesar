@@ -1,0 +1,30 @@
+alfabeto=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q",
+          "R","S","T","U","V","W","X","Y","Z"," "]
+alfabetoCripto=["D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S",
+           "T","U","V","W","X","Y","Z","A","B","C"," "]
+
+letra=[]
+print('*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*')
+print('|  Bem vindo a Cifra de Cesar |')
+print('*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*')
+print('')
+frase=input("Digite o texto a ser criptografado: ")
+
+fraseMaiuscula=frase.upper()
+
+for i in range(len(fraseMaiuscula)):
+    for j in range(len(alfabeto)):
+        if (fraseMaiuscula[i]==" "):
+            letra.append(26)
+            break
+        
+        if alfabeto[j]==fraseMaiuscula[i]:
+            letra.append(j)
+            
+print('*******************')
+print("Texto criptografado:")
+print('*******************')
+
+for k in range(len(letra)):
+    print(alfabetoCripto[letra[k]],end=" ")     
+print("\n")
