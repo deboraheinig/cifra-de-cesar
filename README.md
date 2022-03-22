@@ -8,3 +8,13 @@ Em criptografia, a Cifra de César, também conhecida como cifra de troca, códi
 
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/1200px-Caesar3.svg.png)
+
+# Requisitos
+
+* Python 3.2+
+
+# Exemplo de saída
+```
+Entrada: ABC
+Saída: DEF
+```
